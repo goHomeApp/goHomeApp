@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget28"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.74" >
+
+        <TextView
+            android:id="@+id/NowNumVerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/AppInfoTextView"
+            android:layout_below="@+id/VerInfoTextView"
+            android:background="@drawable/txt_now_num_ver" />
+
+        <TextView
+            android:id="@+id/AppInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/txt_app_info" />
+
+        <TextView
+            android:id="@+id/VerInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/txt_ver_info" />
+
+        <TextView
+            android:id="@+id/DevInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VerInfoTextView"
+            android:layout_below="@+id/NowNumVerTextView"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/txt_dev_info" />
+
+        <TextView
+            android:id="@+id/UpdateVerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DevInfoTextView"
+            android:layout_below="@+id/NowVerTextView"
+            android:background="@drawable/txt_update_version"/>
+
+        <TextView
+            android:id="@+id/UpdateNumVerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/UpdateVerTextView"
+            android:layout_alignBottom="@+id/UpdateVerTextView"
+            android:layout_alignRight="@+id/NowNumVerTextView"
+            android:background="@drawable/txt_now_num_ver" />
+
+        <TextView
+            android:id="@+id/NowVerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/DevInfoTextView"
+            android:layout_alignRight="@+id/UpdateVerTextView"
+            android:background="@drawable/txt_now_version" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_home"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/MapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_map"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/InformationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_information"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/SettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_setting"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/ExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_off"
+            android:onClick="mOnClick" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget28"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.74" >
+
+        <Button
+            android:id="@+id/OkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/btn_start"
+            android:onClick="mOnClick" />
+
+        <TextView
+            android:id="@+id/TimeNumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/PhoneNumTextView"
+            android:layout_centerVertical="true"
+             android:background="@drawable/txt_timeslot" />
+
+        <EditText
+            android:id="@+id/PhoneNumEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/PhoneNumTextView"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/ContactsButton"
+            android:layout_toRightOf="@+id/PhoneNumTextView"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/PhoneNumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ContactsButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+             android:background="@drawable/txt_number" />
+
+        <Button
+            android:id="@+id/ContactsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TimeNumEditText"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+             android:background="@drawable/btn_contacts"
+             android:onClick="mOnClick"  />
+
+        <TextView
+            android:id="@+id/TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ContactsButton"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/txt_title" />
+
+        <EditText
+            android:id="@+id/TimeNumEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/TimeNumTextView"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_home"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/MapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_map"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/InformationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_information"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/SettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_setting"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/ExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_off"
+            android:onClick="mOnClick"  />
+
+    </LinearLayout>
+
+</LinearLayout>

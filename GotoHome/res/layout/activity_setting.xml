@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget28"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.74" >
+
+        <Button
+            android:id="@+id/OkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/btn_ok"
+            android:onClick="mOnClick" />
+
+        <TextView
+            android:id="@+id/VolumeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/OkButton"
+            android:layout_alignLeft="@+id/ChoiceTextView"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/txt_volume" />
+
+        <TextView
+            android:id="@+id/ChoiceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SettingTextView"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/txt_choice" />
+
+        <TextView
+            android:id="@+id/SettingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/txt_setting" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_home"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/MapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_map"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/InformationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_information"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/SettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_setting"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/ExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_off"
+            android:onClick="mOnClick" />
+
+    </LinearLayout>
+
+</LinearLayout>

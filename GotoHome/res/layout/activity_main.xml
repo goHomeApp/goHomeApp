@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.74" >
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/btn_alimy"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/ManualButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/StartButton"
+            android:layout_below="@+id/StartButton"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/btn_manual"
+            android:onClick="mOnClick" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_home" 
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/MapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_map"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/InformationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_information"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/SettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_setting"
+            android:onClick="mOnClick"  />
+
+        <Button
+            android:id="@+id/ExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tap_off"
+            android:onClick="mOnClick"  />
+
+    </LinearLayout>
+
+</LinearLayout>
